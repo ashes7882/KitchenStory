@@ -1,0 +1,22 @@
+<h1>{{ title }}</h1>
+
+<div class="md-form">
+  <input type="search" [(ngModel)]="searchText" placeholder="Search text" />
+</div>
+<!-- <ul *ngFor="let data of dataset | filter: searchText">
+  <li>{{ data }}</li>
+  <button class="btn btn-primary">Buy</button>
+</ul> -->
+
+<div class="row" *ngFor="let data of dataset | filter: searchText">
+  <div class="col-sm-4">
+    <div class="card-group">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ data }}</h5>
+          <button (click)="handleClick()" class="btn btn-primary">Buy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

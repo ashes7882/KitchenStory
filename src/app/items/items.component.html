@@ -1,0 +1,4 @@
+<h2>Select the number of items</h2>
+<input type="number" [(ngModel)]="itemsSelected" />
+<button (click)="handleClick()">Buy</button>
+<p>Total price: {{ itemsSelected * 23 }}</p>

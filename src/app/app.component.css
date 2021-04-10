@@ -1,0 +1,9 @@
+h1{
+    text-align: center;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+.card{
+    display: inline-block;
+}
